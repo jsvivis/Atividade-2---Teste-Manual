@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Seja Bem-vindo(a)!</h1>
+        <p id="mensagemBoasVindas"></p>
+    </div>
+
+    <script>
+        // Recupera o nome do localStorage
+        const nomeUsuario = localStorage.getItem('nomeUsuario');
+        
+        // Exibe o nome na página
+        if (nomeUsuario) {
+            document.getElementById('mensagemBoasVindas').innerText = `Seu cadastro foi realizado com sucesso, ${nomeUsuario}!`; 
+         } 
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
